@@ -10,13 +10,13 @@ class Storage {
     }
 
     addItem(newItem) {
-      this.#itemsitems.push(newItem);
-      return this.#itemsitems;
+      this.#items.push(newItem);
+      return this.#items;
     }
 
     removeItem(itemToRemove) {
     let index;
-    while ((index = this.items.indexOf(itemToRemove)) !== -1) {
+    while ((index = this.#items.indexOf(itemToRemove)) !== -1) {
       this.#items.splice(index, 1);
     }
   }
